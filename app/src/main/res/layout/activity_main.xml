@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/selfTestButton"
+        android:layout_width="166dp"
+        android:layout_height="166dp"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="123dp"
+        android:background="@drawable/round_button"
+        android:fontFamily="@font/nanum_eb"
+        android:text="자가진단"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userName" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/dailyTestButton"
+        android:layout_width="166dp"
+        android:layout_height="166dp"
+        android:layout_marginStart="2dp"
+        android:background="@drawable/round_button"
+        android:fontFamily="@font/nanum_eb"
+        android:text="하루\n 테스트"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selfTestButton" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/hospitalButton"
+        android:layout_width="166dp"
+        android:layout_height="166dp"
+        android:background="@drawable/round_button"
+        android:fontFamily="@font/nanum_eb"
+        android:text="치매센터"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selfTestButton" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/scoreButton"
+        android:layout_width="166dp"
+        android:layout_height="166dp"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="166dp"
+        android:layout_marginEnd="123dp"
+        android:background="@drawable/round_button"
+        android:fontFamily="@font/nanum_eb"
+        android:text="내 점수"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selfTestButton" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/nanum_eb"
+        android:text="김땡땡"
+        android:textColor="#CDDC39"
+        android:textSize="42dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/nanum_r"
+        android:text="님, 안녕하세요!"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/userName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
