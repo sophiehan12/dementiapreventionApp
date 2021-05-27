@@ -9,6 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DementiaPrevention">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBXC_nV9E9tfIE1_3rVSSTVxHBlWUXBIP8"/>
+
         <activity android:name=".ScoreActivity"></activity>
         <activity android:name=".HospitalActivity" />
         <activity android:name=".DailyTestActivity" />
