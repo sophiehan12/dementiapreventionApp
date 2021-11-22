@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         selfTestButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,SelfTestActivity.class));
+                startActivity(new Intent(MainActivity.this,SurveyMainActivity.class));
             }
         });
         dailyTestButton.setOnClickListener(new View.OnClickListener() {
